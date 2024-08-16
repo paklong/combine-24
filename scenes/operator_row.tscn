@@ -1,0 +1,60 @@
+[gd_scene load_steps=2 format=3 uid="uid://nu2x8gc8q38o"]
+
+[ext_resource type="PackedScene" uid="uid://da3wqhasdy102" path="res://scenes/operator_tile.tscn" id="1_1dpxn"]
+
+[node name="OperatorRow" type="PanelContainer"]
+offset_right = 284.0
+offset_bottom = 142.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 4
+alignment = 1
+
+[node name="OperatorTileOpen" parent="VBoxContainer/HBoxContainer" instance=ExtResource("1_1dpxn")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="OperatorTilePlus" parent="VBoxContainer/HBoxContainer" instance=ExtResource("1_1dpxn")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="OperatorTileMinus" parent="VBoxContainer/HBoxContainer" instance=ExtResource("1_1dpxn")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="OperatorTileMultiply" parent="VBoxContainer/HBoxContainer" instance=ExtResource("1_1dpxn")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="OperatorTileDivision" parent="VBoxContainer/HBoxContainer" instance=ExtResource("1_1dpxn")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="OperatorTileClosed" parent="VBoxContainer/HBoxContainer" instance=ExtResource("1_1dpxn")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="OperatorTileUndo" parent="VBoxContainer/HBoxContainer2" instance=ExtResource("1_1dpxn")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="OperatorTileRedo" parent="VBoxContainer/HBoxContainer2" instance=ExtResource("1_1dpxn")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3

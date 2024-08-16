@@ -1,0 +1,55 @@
+[gd_scene load_steps=4 format=3 uid="uid://cx82gkkuvqra"]
+
+[ext_resource type="PackedScene" uid="uid://dc31x5nhh8m66" path="res://scenes/number_tile.tscn" id="1_60o4f"]
+[ext_resource type="PackedScene" uid="uid://da3wqhasdy102" path="res://scenes/operator_tile.tscn" id="2_bko8i"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f7fah"]
+content_margin_top = 2.0
+content_margin_bottom = 2.0
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[node name="AnswerBar" type="PanelContainer"]
+clip_children = 2
+offset_right = 400.0
+offset_bottom = 100.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_f7fah")
+
+[node name="AnswerBarContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="AnswerBarNumberTile1" parent="AnswerBarContainer" instance=ExtResource("1_60o4f")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="AnswerBarOperatorTile1" parent="AnswerBarContainer" instance=ExtResource("2_bko8i")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="AnswerBarNumberTile2" parent="AnswerBarContainer" instance=ExtResource("1_60o4f")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="AnswerBarOperatorTile2" parent="AnswerBarContainer" instance=ExtResource("2_bko8i")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="AnswerBarNumberTile3" parent="AnswerBarContainer" instance=ExtResource("1_60o4f")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="AnswerBarOperatorTile3" parent="AnswerBarContainer" instance=ExtResource("2_bko8i")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="AnswerBarNumberTile4" parent="AnswerBarContainer" instance=ExtResource("1_60o4f")]
+layout_mode = 2
+size_flags_horizontal = 3
