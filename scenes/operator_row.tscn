@@ -55,6 +55,10 @@ size_flags_horizontal = 3
 layout_mode = 2
 size_flags_horizontal = 3
 
+[node name="OperatorTileAns" parent="VBoxContainer/HBoxContainer2" instance=ExtResource("1_1dpxn")]
+layout_mode = 2
+size_flags_horizontal = 3
+
 [node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/HBoxContainer2"]
 layout_mode = 2
 size_flags_horizontal = 3

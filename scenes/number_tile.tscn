@@ -27,3 +27,8 @@ keep_pressed_outside = true
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 unique_name_in_owner = true
+
+[node name="Cover" type="ColorRect" parent="."]
+visible = false
+layout_mode = 2
+color = Color(1, 1, 1, 0.321569)
