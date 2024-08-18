@@ -1,27 +1,33 @@
-[gd_scene load_steps=2 format=3 uid="uid://depthmv37ux30"]
+[gd_scene load_steps=3 format=3 uid="uid://depthmv37ux30"]
 
 [ext_resource type="PackedScene" uid="uid://dc31x5nhh8m66" path="res://scenes/number_tile.tscn" id="1_6lf71"]
+[ext_resource type="Script" path="res://scripts/number_row.gd" id="1_ft2ab"]
 
 [node name="NumberRow" type="PanelContainer"]
 offset_right = 400.0
 offset_bottom = 100.0
+script = ExtResource("1_ft2ab")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 layout_mode = 2
 theme_override_constants/separation = 4
 
 [node name="NumberTile1" parent="HBoxContainer" instance=ExtResource("1_6lf71")]
+unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 
 [node name="NumberTile2" parent="HBoxContainer" instance=ExtResource("1_6lf71")]
+unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 
 [node name="NumberTile3" parent="HBoxContainer" instance=ExtResource("1_6lf71")]
+unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 
 [node name="NumberTile4" parent="HBoxContainer" instance=ExtResource("1_6lf71")]
+unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3

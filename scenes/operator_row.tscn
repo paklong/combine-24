@@ -15,10 +15,6 @@ layout_mode = 2
 theme_override_constants/separation = 4
 alignment = 1
 
-[node name="OperatorTileOpen" parent="VBoxContainer/HBoxContainer" instance=ExtResource("1_1dpxn")]
-layout_mode = 2
-size_flags_horizontal = 3
-
 [node name="OperatorTilePlus" parent="VBoxContainer/HBoxContainer" instance=ExtResource("1_1dpxn")]
 layout_mode = 2
 size_flags_horizontal = 3
@@ -35,23 +31,11 @@ size_flags_horizontal = 3
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="OperatorTileClosed" parent="VBoxContainer/HBoxContainer" instance=ExtResource("1_1dpxn")]
-layout_mode = 2
-size_flags_horizontal = 3
-
 [node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_constants/separation = 4
 
-[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/HBoxContainer2"]
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="OperatorTileUndo" parent="VBoxContainer/HBoxContainer2" instance=ExtResource("1_1dpxn")]
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="OperatorTileRedo" parent="VBoxContainer/HBoxContainer2" instance=ExtResource("1_1dpxn")]
+[node name="OperatorTileOpen" parent="VBoxContainer/HBoxContainer2" instance=ExtResource("1_1dpxn")]
 layout_mode = 2
 size_flags_horizontal = 3
 
@@ -59,6 +43,6 @@ size_flags_horizontal = 3
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/HBoxContainer2"]
+[node name="OperatorTileClosed" parent="VBoxContainer/HBoxContainer2" instance=ExtResource("1_1dpxn")]
 layout_mode = 2
 size_flags_horizontal = 3

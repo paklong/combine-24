@@ -25,7 +25,7 @@ func _on_button_pressed():
 func update_operator(new_operator : String):
 	operator = new_operator
 	if new_operator.length() > 1:
-		rich_text_label.text = '[font_size=25][center]%s[/center][/font_size]' % operator
+		rich_text_label.text = '[font_size=50][center]%s[/center][/font_size]' % '(...)'
 	else:
 		rich_text_label.text = '[font_size=50][center]%s[/center][/font_size]' % operator
 	

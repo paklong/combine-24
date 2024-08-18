@@ -1,31 +1,20 @@
 [gd_scene load_steps=6 format=3 uid="uid://cx82gkkuvqra"]
 
+[ext_resource type="StyleBox" uid="uid://bg7mkrxg2ovx1" path="res://assets/answer_bar.tres" id="1_8jn2n"]
 [ext_resource type="PackedScene" uid="uid://dc31x5nhh8m66" path="res://scenes/number_tile.tscn" id="1_60o4f"]
 [ext_resource type="Script" path="res://scripts/answer_bar.gd" id="1_avlbx"]
 [ext_resource type="PackedScene" uid="uid://da3wqhasdy102" path="res://scenes/operator_tile.tscn" id="2_bko8i"]
 [ext_resource type="Texture2D" uid="uid://b1kwo52rpecpn" path="res://assets/images/Prinbles_YetAnotherIcons/Repeat-Right.png" id="4_cnan5"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f7fah"]
-content_margin_top = 2.0
-content_margin_bottom = 2.0
-border_width_left = 10
-border_width_top = 10
-border_width_right = 10
-border_width_bottom = 10
-border_color = Color(0, 0, 0, 1)
-corner_radius_top_left = 50
-corner_radius_top_right = 50
-corner_radius_bottom_right = 50
-corner_radius_bottom_left = 50
-
 [node name="AnswerBar" type="PanelContainer"]
 clip_children = 2
 offset_right = 400.0
 offset_bottom = 100.0
-theme_override_styles/panel = SubResource("StyleBoxFlat_f7fah")
+theme_override_styles/panel = ExtResource("1_8jn2n")
 script = ExtResource("1_avlbx")
 
 [node name="AnswerBarContainer" type="HBoxContainer" parent="."]
+unique_name_in_owner = true
 layout_mode = 2
 theme_override_constants/separation = 0
 
